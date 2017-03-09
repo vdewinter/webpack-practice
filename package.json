@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack",
-    "dev-serve": "webpack-dev-server",
+    "build-prod": "webpack -p", // removes dead code
+    "dev-serve": "webpack-dev-server --hot --inline --content-base dist/",
     "watch": "webpack --watch"
   },
   "keywords": [],
@@ -17,6 +18,10 @@
     "babel-loader": "^6.3.2",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-latest": "^6.22.0",
-    "webpack": "^1.14.0"
+    "css-loader": "^0.26.4",
+    "style-loader": "^0.13.2",
+    "uglifyjs-webpack-plugin": "^0.3.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
   }
 }
