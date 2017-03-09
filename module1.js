@@ -1,3 +1,1 @@
-module.exports = {
-  TEST: 'Testing 1..2..3'
-};
+export const TEST = 'Testing 1..2..3';
